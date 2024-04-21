@@ -5,10 +5,12 @@
   import Portfolio from "$lib/components/portfolio.svelte";
 
   import { portfolioGifs } from "$lib/stores/imageStore";
+
+  import { Alert } from "flowbite-svelte";
 </script>
 
 <section class="landing-page">
-  <Header />
+  <!-- <Header />
 
   <Portfolio portfolioGifs={$portfolioGifs} />
 
@@ -20,7 +22,11 @@
     <div class="social-proof-item"></div>
     <div class="social-proof-item"></div>
     <div class="social-proof-item"></div>
-  </div>
+  </div> -->
+
+  <Alert>
+    <span class="font-medium">Info alert!</span> A simple info alert—check it out!
+  </Alert>
 </section>
 
 <style>
